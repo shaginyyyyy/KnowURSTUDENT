@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Movie Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background for a cinematic feel */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #1e1e1e; /* Darker container for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Video player styling */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background-color: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-info {
+            margin-top: 15px;
+        }
+
+        .video-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800; /* Bright title color */
+        }
+
+        .video-views {
+            color: #b0b0b0; /* Lighter grey for view count */
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .like-share-buttons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .like-share-buttons button {
+            background-color: #ff9800; /* Bright buttons */
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .like-share-buttons button:hover {
+            background-color: #ffa726; /* Slightly lighter hover effect */
+        }
+
+        .comments-section {
+            margin-top: 30px;
+        }
+
+        .comments-section h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .comments-section textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #1e1e1e; /* Darker textarea */
+            color: #fff; /* White text for readability */
+        }
+
+        .comments-section button {
+            margin-top: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comments-section button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Video Player -->
+    <div class="video-container">
+        <video controls poster="750x450_843678-photo-2024-09-26t003140726.webp"> <!-- Replace 'thumbnail.jpg' with your image path -->
+            <source src="ma.mkv" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Video Information -->
+    <div class="video-info">
+        <div class="video-title">Meiyazhagan | Karthi | Arvind Swamy | PreDVD</div>
+        <div class="video-views">1M views • Uploaded on Feb 31, 2024</div>
+
+        <!-- Like, Share, Download, Subscribe Buttons -->
+        <div class="like-share-buttons">
+            <button>👍 Like</button>
+            <button>🔗 Share</button>
+            <button>📥 Download</button>
+            <button>🔔 Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="comments-section">
+        <h3>Comments</h3>
+        <textarea placeholder="Add a comment..."></textarea>
+        <button>Post</button>
+    </div>
+</div>
+<a href="INDEX.HTML">Return To INDEX>></a>
+
+<footer>
+    &copy; 2024 MovieFlix. All Rights Reserved.
+</footer>
+</body>
+</html>
